@@ -1,0 +1,42 @@
+body {
+  background: #fff3af;
+  font-family: Arial, Helvetica, sans-serif;
+h1 {
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background: #161612;
+    font-family:'Times New Roman', Times, serif;
+}
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0px 20px 20px 100px;
+  padding: 25px;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs label {
+  background: #161612;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.tabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 25px;
+  order: 1;
+  display: none;
+}
+.tabs input[type='radio']:checked + label + .tab {
+  display: block;
+}
+.tabs input[type="radio"]:checked + label {
+  background: white;
+  color: #161612
+}
